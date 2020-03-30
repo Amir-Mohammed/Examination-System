@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="img/icon.jpg" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Exam Site</title>
+  </head>
+  <body>
+    <section class="section-form">
+      <div class="container">
+        <div class="form-box">
+          <div class="login-form">
+            <form action="exam.html" class="form">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  Login Form
+                </h2>
+                <span
+                  class="hr hr--left hr--short u-margin-top-small u-margin-bottom-small"
+                ></span>
+              </div>
+              <div class="form__group">
+                <input
+                  type="text"
+                  id="name"
+                  class="form__input"
+                  placeholder="Full name"
+                  required
+                />
+                <label for="name" class="form__label">Full name</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="email"
+                  id="email"
+                  class="form__input"
+                  placeholder="E-mail address"
+                  required
+                />
+                <label for="email" class="form__label">E-mail address</label>
+              </div>
+              <div class="form__group">
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    class="form__radio-input"
+                    name="gender"
+                    id="male"
+                  />
+                  <label for="male" class="form__radio-label"
+                    ><span class="form__radio-button"></span>Male</label
+                  >
+                </div>
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    class="form__radio-input"
+                    name="gender"
+                    id="female"
+                  />
+                  <label for="female" class="form__radio-label"
+                    ><span class="form__radio-button"></span>Female</label
+                  >
+                </div>
+              </div>
+              <div class="form__group u-margin-top-medium">
+                <button class="btn btn--orange" type="submit">
+                  Start The Exam
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+    <script src="enhanced.js"></script>
+  </body>
+</html>

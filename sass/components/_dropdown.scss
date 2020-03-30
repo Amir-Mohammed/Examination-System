@@ -1,0 +1,38 @@
+.dropdown {
+  position: relative;
+
+  &__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    background-color: $color-white;
+    width: 20.8rem;
+    border-top: 0.2rem solid $color-primary;
+    display: none;
+  }
+  &:hover &__menu {
+    display: block;
+  }
+
+  &__item {
+    list-style: none;
+    width: 100%;
+    height: auto;
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    color: $color-gray-dark;
+    font-weight: 400;
+    display: block;
+    -webkit-transition: all 0.15s;
+    transition: all 0.15s;
+
+    &:hover {
+      background-color: $color-gray-light;
+      color: $color-gray-dark-2;
+    }
+  }
+}

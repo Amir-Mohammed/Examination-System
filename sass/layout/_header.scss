@@ -1,0 +1,30 @@
+.header {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba($color-black, 0.8)),
+    to(rgba($color-black, 0.8))
+  );
+  background-image: linear-gradient(
+    rgba($color-black, 0.8),
+    rgba($color-black, 0.8)
+  );
+  height: 86vh;
+  text-align: center;
+  position: relative;
+  background-position: 50% 45%;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: $color-primary;
+}

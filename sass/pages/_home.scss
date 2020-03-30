@@ -1,0 +1,28 @@
+.section-form {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)
+  );
+}
+
+.form-box {
+  @include absCenter;
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../img/11.jpg);
+  background-size: cover;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+  border-radius: 0.3rem;
+  width: 80vw;
+}
+
+.login-form {
+  width: 50%;
+  padding: 6rem;
+}

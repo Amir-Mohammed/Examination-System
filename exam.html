@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="img/icon.jpg" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Exam</title>
+  </head>
+  <body>
+    <section class="section-question">
+      <div class="top">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar__logo">
+              <a class="navbar__logo-link" href="#">
+                <img class="navbar__img" src="img/logo.png" alt="Logo" />
+              </a>
+            </div>
+            <div class="navbar__nav">
+              <i class="fas fa-hourglass-start navbar__timer-icon"></i>
+              <span class="navbar__timer">00:03:00</span>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="bottom">
+        <div class="row">
+          <div class="col-2-of-3">
+            <div class="question-box">
+              <p class="question-box__number"></p>
+              <div class="question">
+                <div class="form">
+                  <div class="u-margin-bottom-big">
+                    <h2 class="heading-tertiary heading-tertiary--quiz"></h2>
+                  </div>
+                  <div class="form__group form__group--q">
+                    <div class="form__radio-group">
+                      <input
+                        type="radio"
+                        class="form__radio-input"
+                        name="answer"
+                        id="answer-0"
+                        value="0"
+                      />
+                      <label for="answer-0" class="form__radio-label"></label>
+                    </div>
+                    <div class="form__radio-group">
+                      <input
+                        type="radio"
+                        class="form__radio-input"
+                        name="answer"
+                        id="answer-1"
+                        value="1"
+                      />
+                      <label for="answer-1" class="form__radio-label"></label>
+                    </div>
+                    <br />
+                    <br />
+
+                    <div class="form__radio-group">
+                      <input
+                        type="radio"
+                        class="form__radio-input"
+                        name="answer"
+                        id="answer-2"
+                        value="2"
+                      />
+                      <label for="answer-2" class="form__radio-label"></label>
+                    </div>
+                    <div class="form__radio-group">
+                      <input
+                        type="radio"
+                        class="form__radio-input"
+                        name="answer"
+                        id="answer-3"
+                        value="3"
+                      />
+                      <label for="answer-3" class="form__radio-label"></label>
+                    </div>
+                  </div>
+                  <div class="form__group u-margin-top-big u-center-text">
+                    <button
+                      class="effect effect-1 previous left"
+                      onclick="turnQuestion(-1)"
+                    >
+                      Prev
+                    </button>
+                    <button
+                      class="btn btn--white btn--small btn--icon btn--mark mark"
+                      icon-name="&#xf08d;"
+                      onclick="markQuestion()"
+                    >
+                      Mark
+                    </button>
+                    <button
+                      class="btn btn--white btn--small btn--finish btn--icon finish"
+                      icon-name="&#xf058;"
+                      onclick="finish(true)"
+                    >
+                      Finish
+                    </button>
+                    <button
+                      class="effect effect-2 forward right"
+                      onclick="turnQuestion(1)"
+                    >
+                      Next
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="mark-box u-center-text">
+              <h2 class="heading-secondary heading-secondary--mark">
+                Marked Questions
+              </h2>
+              <span
+                class="hr hr--short hr--center u-margin-top-small u-margin-bottom-medium"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------------------------------PopUp Div------------------------------------------->
+    <div class="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="#" alt="Tour img" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <h2 class="heading-secondary u-margin-bottom-small popup__head">
+            Exam Results
+          </h2>
+          <h3
+            class="heading-tertiary u-margin-bottom-small popup__heading"
+          ></h3>
+          <p class="popup__text"></p>
+          <a
+            href="index.html"
+            class="btn btn--white btn--icon btn--mark"
+            icon-name="&#xf015;"
+            >Go Home
+          </a>
+          <a
+            href="exam.html"
+            class="btn btn--icon btn--result btn--finish"
+            icon-name="&#xf2f9;"
+            >Restart Exam</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

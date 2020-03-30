@@ -1,0 +1,41 @@
+.navbar {
+  background-color: $color-primary-dark;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $color-gray-dark-2;
+  user-select: none;
+
+  @include clearfix;
+
+  &__logo {
+    float: left;
+    height: 8.8rem;
+    max-height: 8.8rem;
+  }
+
+  &__img {
+    max-height: 8.8rem;
+  }
+
+  &__nav {
+    float: right;
+  }
+
+  &__timer {
+    height: 8.8rem;
+    line-height: 8.8rem;
+    font-size: 1.8rem;
+    padding-right: 14rem;
+    display: inline-block;
+    color: $color-white;
+    &-icon {
+      height: 8.8rem;
+      margin-right: 0.4rem;
+      line-height: 8.8rem;
+      font-size: 1.8rem;
+      color: $color-white;
+      display: inline-block;
+    }
+  }
+}
